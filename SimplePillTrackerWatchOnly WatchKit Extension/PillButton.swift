@@ -9,23 +9,33 @@ import SwiftUI
 
 struct PillButton: View {
 
+    @Binding var drugsTaken: Bool
+    
     var title: String
     var textColour: Color
     var backgroundColour: Color
     
     
     var body: some View {
-        Text(title)
-            .frame(width: 150.0, height: 50)
-            .background(backgroundColour)
-            .foregroundColor(textColour)
-            .font(.system(size: 20, weight: .bold, design: .default))
-            .cornerRadius(10)
+        
+        HStack {
+            
+            Image(systemName: "pills.fill")
+                .foregroundColor(drugsTaken ? Color.green : Color.red)
+                .font(.largeTitle)
+            
+            Text(title)
+                .frame(width: 100.0, height: 60)
+                .background(drugsTaken ? Color.green : Color.red)
+                .foregroundColor(textColour)
+                .font(.system(size: 20, weight: .bold, design: .default))
+                .cornerRadius(10)
+        }
     }
 }
 
 struct PillButton_Previews: PreviewProvider {
     static var previews: some View {
-        PillButton(title: "Test Title", textColour: .white, backgroundColour: .red)
+        PillButton(drugsTaken: .constant(true), title: "Take Drugs", textColour: .white, backgroundColour: .red)
     }
 }
