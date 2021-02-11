@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		947A08AE25D55C9E00A48B38 /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A08AD25D55C9E00A48B38 /* PillButton.swift */; };
 		94F34CF125D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94F34CF025D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94F34CF625D549000067306D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F34CF525D549000067306D /* Assets.xcassets */; };
 		94F34CFD25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94F34CFC25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		947A08AD25D55C9E00A48B38 /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
 		94F34CEC25D548FF0067306D /* SimplePillTrackerWatchOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePillTrackerWatchOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F34CF025D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimplePillTrackerWatchOnly WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F34CF525D549000067306D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				94F34D0125D549000067306D /* SimplePillTrackerWatchOnlyApp.swift */,
 				94F34D0325D549000067306D /* ContentView.swift */,
+				947A08AD25D55C9E00A48B38 /* PillButton.swift */,
 				94F34D0525D549000067306D /* NotificationController.swift */,
 				94F34D0725D549000067306D /* NotificationView.swift */,
 				94F34D0925D549000067306D /* ComplicationController.swift */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947A08AE25D55C9E00A48B38 /* PillButton.swift in Sources */,
 				94F34D0625D549000067306D /* NotificationController.swift in Sources */,
 				94F34D0425D549000067306D /* ContentView.swift in Sources */,
 				94F34D0A25D549000067306D /* ComplicationController.swift in Sources */,
