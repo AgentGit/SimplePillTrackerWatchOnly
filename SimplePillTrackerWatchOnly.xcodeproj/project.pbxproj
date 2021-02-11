@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94F34CF125D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94F34CF025D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94F34CF625D549000067306D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F34CF525D549000067306D /* Assets.xcassets */; };
+		94F34CFD25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94F34CFC25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94F34D0225D549000067306D /* SimplePillTrackerWatchOnlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0125D549000067306D /* SimplePillTrackerWatchOnlyApp.swift */; };
+		94F34D0425D549000067306D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0325D549000067306D /* ContentView.swift */; };
+		94F34D0625D549000067306D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0525D549000067306D /* NotificationController.swift */; };
+		94F34D0825D549000067306D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0725D549000067306D /* NotificationView.swift */; };
+		94F34D0A25D549000067306D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0925D549000067306D /* ComplicationController.swift */; };
+		94F34D0C25D549000067306D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F34D0B25D549000067306D /* Assets.xcassets */; };
+		94F34D0F25D549000067306D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F34D0E25D549000067306D /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94F34CF225D548FF0067306D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F34CE625D548FF0067306D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F34CEF25D548FF0067306D;
+			remoteInfo = "SimplePillTrackerWatchOnly WatchKit App";
+		};
+		94F34CFE25D549000067306D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F34CE625D548FF0067306D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F34CFB25D549000067306D;
+			remoteInfo = "SimplePillTrackerWatchOnly WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94F34D1725D549000067306D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94F34CFD25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F34D1B25D549000067306D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				94F34CF125D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		94F34CEC25D548FF0067306D /* SimplePillTrackerWatchOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePillTrackerWatchOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F34CF025D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimplePillTrackerWatchOnly WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F34CF525D549000067306D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94F34CF725D549000067306D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F34CFC25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimplePillTrackerWatchOnly WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F34D0125D549000067306D /* SimplePillTrackerWatchOnlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePillTrackerWatchOnlyApp.swift; sourceTree = "<group>"; };
+		94F34D0325D549000067306D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94F34D0525D549000067306D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		94F34D0725D549000067306D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		94F34D0925D549000067306D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		94F34D0B25D549000067306D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94F34D0E25D549000067306D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		94F34D1025D549000067306D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F34D1125D549000067306D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94F34CF925D549000067306D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94F34CE525D548FF0067306D = {
+			isa = PBXGroup;
+			children = (
+				94F34CF425D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App */,
+				94F34D0025D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension */,
+				94F34CED25D548FF0067306D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94F34CED25D548FF0067306D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94F34CEC25D548FF0067306D /* SimplePillTrackerWatchOnly.app */,
+				94F34CF025D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app */,
+				94F34CFC25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94F34CF425D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				94F34CF525D549000067306D /* Assets.xcassets */,
+				94F34CF725D549000067306D /* Info.plist */,
+			);
+			path = "SimplePillTrackerWatchOnly WatchKit App";
+			sourceTree = "<group>";
+		};
+		94F34D0025D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94F34D0125D549000067306D /* SimplePillTrackerWatchOnlyApp.swift */,
+				94F34D0325D549000067306D /* ContentView.swift */,
+				94F34D0525D549000067306D /* NotificationController.swift */,
+				94F34D0725D549000067306D /* NotificationView.swift */,
+				94F34D0925D549000067306D /* ComplicationController.swift */,
+				94F34D0B25D549000067306D /* Assets.xcassets */,
+				94F34D1025D549000067306D /* Info.plist */,
+				94F34D1125D549000067306D /* PushNotificationPayload.apns */,
+				94F34D0D25D549000067306D /* Preview Content */,
+			);
+			path = "SimplePillTrackerWatchOnly WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		94F34D0D25D549000067306D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				94F34D0E25D549000067306D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94F34CEB25D548FF0067306D /* SimplePillTrackerWatchOnly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F34D1C25D549000067306D /* Build configuration list for PBXNativeTarget "SimplePillTrackerWatchOnly" */;
+			buildPhases = (
+				94F34CEA25D548FF0067306D /* Resources */,
+				94F34D1B25D549000067306D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F34CF325D548FF0067306D /* PBXTargetDependency */,
+			);
+			name = SimplePillTrackerWatchOnly;
+			productName = SimplePillTrackerWatchOnly;
+			productReference = 94F34CEC25D548FF0067306D /* SimplePillTrackerWatchOnly.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		94F34CEF25D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F34D1825D549000067306D /* Build configuration list for PBXNativeTarget "SimplePillTrackerWatchOnly WatchKit App" */;
+			buildPhases = (
+				94F34CEE25D548FF0067306D /* Resources */,
+				94F34D1725D549000067306D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F34CFF25D549000067306D /* PBXTargetDependency */,
+			);
+			name = "SimplePillTrackerWatchOnly WatchKit App";
+			productName = "SimplePillTrackerWatchOnly WatchKit App";
+			productReference = 94F34CF025D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		94F34CFB25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94F34D1425D549000067306D /* Build configuration list for PBXNativeTarget "SimplePillTrackerWatchOnly WatchKit Extension" */;
+			buildPhases = (
+				94F34CF825D549000067306D /* Sources */,
+				94F34CF925D549000067306D /* Frameworks */,
+				94F34CFA25D549000067306D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimplePillTrackerWatchOnly WatchKit Extension";
+			productName = "SimplePillTrackerWatchOnly WatchKit Extension";
+			productReference = 94F34CFC25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94F34CE625D548FF0067306D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					94F34CEB25D548FF0067306D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					94F34CEF25D548FF0067306D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					94F34CFB25D549000067306D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 94F34CE925D548FF0067306D /* Build configuration list for PBXProject "SimplePillTrackerWatchOnly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94F34CE525D548FF0067306D;
+			productRefGroup = 94F34CED25D548FF0067306D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94F34CEB25D548FF0067306D /* SimplePillTrackerWatchOnly */,
+				94F34CEF25D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App */,
+				94F34CFB25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94F34CEA25D548FF0067306D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F34CEE25D548FF0067306D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F34CF625D549000067306D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F34CFA25D549000067306D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F34D0F25D549000067306D /* Preview Assets.xcassets in Resources */,
+				94F34D0C25D549000067306D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94F34CF825D549000067306D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F34D0625D549000067306D /* NotificationController.swift in Sources */,
+				94F34D0425D549000067306D /* ContentView.swift in Sources */,
+				94F34D0A25D549000067306D /* ComplicationController.swift in Sources */,
+				94F34D0225D549000067306D /* SimplePillTrackerWatchOnlyApp.swift in Sources */,
+				94F34D0825D549000067306D /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94F34CF325D548FF0067306D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F34CEF25D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App */;
+			targetProxy = 94F34CF225D548FF0067306D /* PBXContainerItemProxy */;
+		};
+		94F34CFF25D549000067306D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F34CFB25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension */;
+			targetProxy = 94F34CFE25D549000067306D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		94F34D1225D549000067306D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94F34D1325D549000067306D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94F34D1525D549000067306D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SimplePillTrackerWatchOnly WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = UVD683W66R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SimplePillTrackerWatchOnly WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterZone.SimplePillTrackerWatchOnly.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		94F34D1625D549000067306D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SimplePillTrackerWatchOnly WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = UVD683W66R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SimplePillTrackerWatchOnly WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterZone.SimplePillTrackerWatchOnly.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		94F34D1925D549000067306D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UVD683W66R;
+				IBSC_MODULE = SimplePillTrackerWatchOnly_WatchKit_Extension;
+				INFOPLIST_FILE = "SimplePillTrackerWatchOnly WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterZone.SimplePillTrackerWatchOnly.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		94F34D1A25D549000067306D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UVD683W66R;
+				IBSC_MODULE = SimplePillTrackerWatchOnly_WatchKit_Extension;
+				INFOPLIST_FILE = "SimplePillTrackerWatchOnly WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterZone.SimplePillTrackerWatchOnly.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		94F34D1D25D549000067306D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UVD683W66R;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterZone.SimplePillTrackerWatchOnly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		94F34D1E25D549000067306D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UVD683W66R;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InterZone.SimplePillTrackerWatchOnly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94F34CE925D548FF0067306D /* Build configuration list for PBXProject "SimplePillTrackerWatchOnly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F34D1225D549000067306D /* Debug */,
+				94F34D1325D549000067306D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F34D1425D549000067306D /* Build configuration list for PBXNativeTarget "SimplePillTrackerWatchOnly WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F34D1525D549000067306D /* Debug */,
+				94F34D1625D549000067306D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F34D1825D549000067306D /* Build configuration list for PBXNativeTarget "SimplePillTrackerWatchOnly WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F34D1925D549000067306D /* Debug */,
+				94F34D1A25D549000067306D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94F34D1C25D549000067306D /* Build configuration list for PBXNativeTarget "SimplePillTrackerWatchOnly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F34D1D25D549000067306D /* Debug */,
+				94F34D1E25D549000067306D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94F34CE625D548FF0067306D /* Project object */;
+}
