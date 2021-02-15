@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9425F4F525DA82D300D5D35B /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425F4F425DA82D300D5D35B /* Date+Ext.swift */; };
 		947A08AE25D55C9E00A48B38 /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A08AD25D55C9E00A48B38 /* PillButton.swift */; };
+		947A08B525D57F7900A48B38 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A08B425D57F7900A48B38 /* Day.swift */; };
+		94D75DDE25D7D716003E1852 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D75DDD25D7D716003E1852 /* MainViewModel.swift */; };
 		94F34CF125D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94F34CF025D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94F34CF625D549000067306D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F34CF525D549000067306D /* Assets.xcassets */; };
 		94F34CFD25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94F34CFC25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94F34D0225D549000067306D /* SimplePillTrackerWatchOnlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0125D549000067306D /* SimplePillTrackerWatchOnlyApp.swift */; };
-		94F34D0425D549000067306D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0325D549000067306D /* ContentView.swift */; };
+		94F34D0425D549000067306D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0325D549000067306D /* MainView.swift */; };
 		94F34D0625D549000067306D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0525D549000067306D /* NotificationController.swift */; };
 		94F34D0825D549000067306D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0725D549000067306D /* NotificationView.swift */; };
 		94F34D0A25D549000067306D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F34D0925D549000067306D /* ComplicationController.swift */; };
@@ -63,14 +66,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9425F4F425DA82D300D5D35B /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		947A08AD25D55C9E00A48B38 /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
+		947A08B425D57F7900A48B38 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		94D75DDD25D7D716003E1852 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		94F34CEC25D548FF0067306D /* SimplePillTrackerWatchOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePillTrackerWatchOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F34CF025D548FF0067306D /* SimplePillTrackerWatchOnly WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimplePillTrackerWatchOnly WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F34CF525D549000067306D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94F34CF725D549000067306D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94F34CFC25D549000067306D /* SimplePillTrackerWatchOnly WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimplePillTrackerWatchOnly WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F34D0125D549000067306D /* SimplePillTrackerWatchOnlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePillTrackerWatchOnlyApp.swift; sourceTree = "<group>"; };
-		94F34D0325D549000067306D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94F34D0325D549000067306D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		94F34D0525D549000067306D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		94F34D0725D549000067306D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		94F34D0925D549000067306D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -91,6 +97,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9425F4F325DA82B600D5D35B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9425F4F425DA82D300D5D35B /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		946F49DF25D81534005969FB /* Screens+Views */ = {
+			isa = PBXGroup;
+			children = (
+				946F49E325D8154D005969FB /* Views */,
+				94F34D0325D549000067306D /* MainView.swift */,
+				94D75DDD25D7D716003E1852 /* MainViewModel.swift */,
+			);
+			path = "Screens+Views";
+			sourceTree = "<group>";
+		};
+		946F49E325D8154D005969FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				947A08AD25D55C9E00A48B38 /* PillButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		947A08B325D57F6200A48B38 /* Model+Managers */ = {
+			isa = PBXGroup;
+			children = (
+				947A08B425D57F7900A48B38 /* Day.swift */,
+			);
+			path = "Model+Managers";
+			sourceTree = "<group>";
+		};
 		94F34CE525D548FF0067306D = {
 			isa = PBXGroup;
 			children = (
@@ -123,13 +163,14 @@
 			isa = PBXGroup;
 			children = (
 				94F34D0125D549000067306D /* SimplePillTrackerWatchOnlyApp.swift */,
-				94F34D0325D549000067306D /* ContentView.swift */,
-				947A08AD25D55C9E00A48B38 /* PillButton.swift */,
+				9425F4F325DA82B600D5D35B /* Extensions */,
+				947A08B325D57F6200A48B38 /* Model+Managers */,
+				946F49DF25D81534005969FB /* Screens+Views */,
+				94F34D0B25D549000067306D /* Assets.xcassets */,
+				94F34D1025D549000067306D /* Info.plist */,
 				94F34D0525D549000067306D /* NotificationController.swift */,
 				94F34D0725D549000067306D /* NotificationView.swift */,
 				94F34D0925D549000067306D /* ComplicationController.swift */,
-				94F34D0B25D549000067306D /* Assets.xcassets */,
-				94F34D1025D549000067306D /* Info.plist */,
 				94F34D1125D549000067306D /* PushNotificationPayload.apns */,
 				94F34D0D25D549000067306D /* Preview Content */,
 			);
@@ -270,12 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947A08B525D57F7900A48B38 /* Day.swift in Sources */,
 				947A08AE25D55C9E00A48B38 /* PillButton.swift in Sources */,
 				94F34D0625D549000067306D /* NotificationController.swift in Sources */,
-				94F34D0425D549000067306D /* ContentView.swift in Sources */,
+				94F34D0425D549000067306D /* MainView.swift in Sources */,
 				94F34D0A25D549000067306D /* ComplicationController.swift in Sources */,
 				94F34D0225D549000067306D /* SimplePillTrackerWatchOnlyApp.swift in Sources */,
 				94F34D0825D549000067306D /* NotificationView.swift in Sources */,
+				94D75DDE25D7D716003E1852 /* MainViewModel.swift in Sources */,
+				9425F4F525DA82D300D5D35B /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

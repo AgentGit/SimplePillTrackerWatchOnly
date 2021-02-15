@@ -12,7 +12,7 @@ struct SimplePillTrackerWatchOnlyApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                MainView()
             }
         }
 
