@@ -9,23 +9,24 @@ import SwiftUI
 
 struct MainView: View {
     
+    @Environment(\.scenePhase) private var scenePhase
     @StateObject var viewModel = MainViewModel()
     
     var body: some View {
         
         ZStack {
             
-            BackgroundView(drugsTaken: $viewModel.drugsTaken)
+            BackgroundView(drugsTaken: viewModel.drugsTaken)
             
             VStack {
                 
                 Text(viewModel.todaysName)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.trailing)
+                    .multilineTextAlignment(.leading)
                 
                 Button {
                     viewModel.drugsTaken.toggle()
-                    UserDefaults.standard.set(viewModel.drugsTaken, forKey: viewModel.todaysName)
+                    
                 } label: {
                     PillButton(drugsTaken: $viewModel.drugsTaken,
                                title: viewModel.drugsTaken ? "Done!" : "Take Drugs!",
@@ -43,11 +44,27 @@ struct MainView: View {
                     }
                     .onAppear {
                         viewModel.updateLastWeeksDisplayDays()
+                        print("UpdateLastWeeksDisplayDays")
                     }
                 }
             }
             .onAppear {
-                viewModel.checkIfDrugsTaken()
+                viewModel.checkIfDrugsTakenToday()
+                print("Check if drugs taken")
+            }
+            .onChange(of: scenePhase) { newScenePhase in
+                  switch newScenePhase {
+                  case .active:
+                    print("App is active")
+                  case .inactive:
+                    UserDefaults.standard.set(viewModel.drugsTaken, forKey: viewModel.todaysName)
+                    print("App is inactive")
+                    print("viewModel.drugsTaken is \(viewModel.drugsTaken)")
+                  case .background:
+                    print("App is in background")
+                  @unknown default:
+                    print("Future proofing only: unexpected new value .onChange of scenePhase")
+                  }
             }
         }
     }
@@ -56,14 +73,18 @@ struct MainView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        ForEach(["Apple Watch Series 6 - 44mm", "Apple Watch Series 6 - 40mm","Apple Watch Series 5 - 44mm", "Apple Watch Series 5 - 40mm"], id: \.self) { deviceName in
+            MainView()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
     }
 }
 
 
 struct BackgroundView: View {
     
-    @Binding var drugsTaken: Bool
+    var drugsTaken: Bool
     
     var body: some View {
         LinearGradient(gradient: Gradient(colors: [.black,
@@ -88,3 +109,17 @@ struct PreviousDay: View {
         }
     }
 }
+
+//
+//struct MyView: View {
+//    @ObservedObject var model: DataModel
+//    @Environment(\.scenePhase) private var scenePhase
+//
+//    var body: some View {
+//        TimerView()
+//            .onChange(of: scenePhase) { phase in
+//                model.isTimerRunning = (phase == .active)
+//            }
+//    }
+//}
+

@@ -20,7 +20,7 @@ final class MainViewModel: ObservableObject {
     }
     
     
-    func checkIfDrugsTaken() {
+    func checkIfDrugsTakenToday() {
         updateTodaysDate()
         drugsTaken = UserDefaults.standard.bool(forKey: todaysName)
     }
