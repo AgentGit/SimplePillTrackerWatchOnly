@@ -42,7 +42,13 @@ struct MainView: View {
                             PreviousDay(day: day)
                         }
                     }
+                    
+                    Spacer()
+                    
+                    Text("App v\(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.1")")
+                        
                     .onAppear {
+                        viewModel.checkIfDrugsTakenToday()
                         viewModel.updateLastWeeksDisplayDays()
                         print("UpdateLastWeeksDisplayDays")
                     }
@@ -55,7 +61,9 @@ struct MainView: View {
             .onChange(of: scenePhase) { newScenePhase in
                   switch newScenePhase {
                   case .active:
-                    print("App is active")
+                    viewModel.checkIfDrugsTakenToday()
+                    viewModel.updateLastWeeksDisplayDays()
+                    print("App is active - updateLastWeeksDisplayDays()")
                   case .inactive:
                     UserDefaults.standard.set(viewModel.drugsTaken, forKey: viewModel.todaysName)
                     print("App is inactive")

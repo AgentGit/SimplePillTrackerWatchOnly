@@ -33,7 +33,7 @@ final class MainViewModel: ObservableObject {
     
     
     func updateLastWeeksDisplayDays() {
-
+        lastWeeksDisplayDays.removeAll()
         let previousWeekDays = Date.previousWeekDays
         for date in previousWeekDays {
             let dateName = dateFormatter.string(from: date)
